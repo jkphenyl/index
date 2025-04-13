@@ -1,27 +1,185 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>J-k Phenyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    /><link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f9f9f9, #e6f7ff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 25px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe57f;
+    }
+
+    .menu-icon {
+      display: none;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .small-container {
+      padding: 30px 20px;
+    }
+
+    .row-2 h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      font-size: 32px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .col-4 {
+      background: #fff;
+      width: 220px;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .col-4 img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .col-4 h4 {
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+
+    .col-4:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      background: #e6faff;
+    }
+
+    .footer-col-2 {
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+      background: #4facfe;
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .footer-col-2 img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .footer-col-2 p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    a.call-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      border-radius: 5px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-image: url('https://jkphenyl.github.io/index/img/phone-call.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background: #4facfe;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 0 0 0 20px;
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
   <div class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="./img/j-k.png" alt="JK" /></a> 
+      <a href="index.html"><img src="https://jkphenyl.github.io/index/img/j-k.png" alt="JK" /></a> 
     </div>
     <nav>
       <ul id="MenuItems">
@@ -29,7 +187,7 @@
         <li><a href="About">Contact Us</a></li>
       </ul>
     </nav>
-    <img src="./img/menu-bar (1).png" alt="menu" class="menu-icon" onclick="menutoggle()" />
+    <img src="https://jkphenyl.github.io/index/img/menu-bar (1).png" alt="menu" class="menu-icon" onclick="menutoggle()" />
   </div>
 </div>
 
@@ -39,35 +197,35 @@
   </div>
   <div class="row">
     <!-- Product Items -->
-    <div class="col-4"><img src="./img/1.jpg" /><h4>Phenyl</h4></div>
-    <div class="col-4"><img src="./img/2.jpg" /><h4>Neem Phenyl</h4></div>
-    <div class="col-4"><img src="./img/black-phenyl.png" /><h4>Black Phenyl</h4></div>
-    <div class="col-4"><img src="./img/Dettol-phenyl.jpeg" /><h4>Dettol Phenyl</h4></div>
-    <div class="col-4"><img src="./img/walker-extra-strong-phenyle.png" /><h4>Walker Extra Strong Phenyle</h4></div>
-    <div class="col-4"><img src="./img/3.jpg" /><h4>Naphthalene Ball</h4></div>
-    <div class="col-4"><img src="./img/4.jpg" /><h4>Bleach</h4></div>
-    <div class="col-4"><img src="./img/Harpic.png" /><h4>Harpic</h4></div>
-    <div class="col-4"><img src="./img/Appliance-Descaler.png" /><h4>Appliance Descaler</h4></div>
-    <div class="col-4"><img src="./img/toilet-cleaner-super-strong-(Drain-Cleaner).png" /><h4>Toilet Cleaner Super Strong</h4></div>
-    <div class="col-4"><img src="./img/Pavitram-Power-Shining-Cleaning-Powder.jpg" /><h4>Shining Cleaning Powder</h4></div>
-    <div class="col-4"><img src="./img/Plastic-Cloth-Clip.jpg" /><h4>Plastic Cloth Clip</h4></div>
-    <div class="col-4"><img src="./img/Stainless-Steel-Scrubber.png" /><h4>Steel Scrubber</h4></div>
-    <div class="col-4"><img src="./img/cloth-washing-brush.png" /><h4>Cloth Washing Brush</h4></div>
-    <div class="col-4"><img src="./img/toilet-cleaning-brush.png" /><h4>Toilet Cleaning Brush</h4></div>
-    <div class="col-4"><img src="./img/laxman-rekha-chalk.png" /><h4>Laxman Rekha Chalk</h4></div>
-    <div class="col-4"><img src="./img/Air-freshener.png" /><h4>Air Freshener</h4></div>
-    <div class="col-4"><img src="./img/room-freshener-spray.png" /><h4>Room Freshener Spray</h4></div>
-    <div class="col-4"><img src="./img/dishwashing-liquid.png" /><h4>Dishwashing Liquid</h4></div>
-    <div class="col-4"><img src="./img/cloth-washing-liquid.png" /><h4>Cloth Washing Liquid</h4></div>
-    <div class="col-4"><img src="./img/caustic-soda.png" /><h4>Caustic Soda</h4></div>
-    <div class="col-4"><img src="./img/Sulphuric-acid.png" /><h4>Sulphuric Acid</h4></div>
-    <div class="col-4"><img src="./img/sodium-hypochlorite.png" /><h4>Sodium Hypochlorite</h4></div>
-    <div class="col-4"><img src="./img/Hidroklorik-asit.jpg" /><h4>Hidroklorik Asit</h4></div>
-    <div class="col-4"><img src="./img/Liquid-Dteteregent-Soapkit.png" /><h4>Liquid Detergent Soapkit</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/1.jpg" /><h4>Phenyl</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/2.jpg" /><h4>Neem Phenyl</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/black-phenyl.png" /><h4>Black Phenyl</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Dettol-phenyl.jpeg" /><h4>Dettol Phenyl</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/walker-extra-strong-phenyle.png" /><h4>Walker Extra Strong Phenyle</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/3.jpg" /><h4>Naphthalene Ball</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/4.jpg" /><h4>Bleach</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Harpic.png" /><h4>Harpic</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Appliance-Descaler.png" /><h4>Appliance Descaler</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/toilet-cleaner-super-strong-(Drain-Cleaner).png" /><h4>Toilet Cleaner Super Strong</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Pavitram-Power-Shining-Cleaning-Powder.jpg" /><h4>Shining Cleaning Powder</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Plastic-Cloth-Clip.jpg" /><h4>Plastic Cloth Clip</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Stainless-Steel-Scrubber.png" /><h4>Steel Scrubber</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/cloth-washing-brush.png" /><h4>Cloth Washing Brush</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/toilet-cleaning-brush.png" /><h4>Toilet Cleaning Brush</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/laxman-rekha-chalk.png" /><h4>Laxman Rekha Chalk</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Air-freshener.png" /><h4>Air Freshener</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/room-freshener-spray.png" /><h4>Room Freshener Spray</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/dishwashing-liquid.png" /><h4>Dishwashing Liquid</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/cloth-washing-liquid.png" /><h4>Cloth Washing Liquid</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/caustic-soda.png" /><h4>Caustic Soda</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Sulphuric-acid.png" /><h4>Sulphuric Acid</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/sodium-hypochlorite.png" /><h4>Sodium Hypochlorite</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Hidroklorik-asit.jpg" /><h4>Hidroklorik Asit</h4></div>
+    <div class="col-4"><img src="https://jkphenyl.github.io/index/img/Liquid-Dteteregent-Soapkit.png" /><h4>Liquid Detergent Soapkit</h4></div>
   </div>
 
   <div class="footer-col-2">
-    <img src="./img/j-k.png" alt="JK Logo" />
+    <img src="https://jkphenyl.github.io/index/img/j-k.png" alt="JK Logo" />
     <p>Pure clean, Every Scene: Our Phenyl, Your Shine. | Purity in every Drop, JK Phenyl</p>
   </div>
 
@@ -83,3 +241,4 @@
 </script>
 
 </body>
+</html>
