@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore JK Phenyl's premium cleaning products for a spotless home. Shop phenyl cleaners, dishwashing liquids, toilet brushes, and more for ultimate hygiene.">
+  <meta name="keywords" content="JK Phenyl, Jignesh Kachhiya, premium cleaning products, phenyl cleaner, neem phenyl, black phenyl, dettol phenyl, toilet cleaner, dishwashing liquid, home hygiene">
+  <meta name="author" content="Jignesh Kachhiya">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jkphenyl.github.io/">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="JK Phenyl - Premium Cleaning Products for Home & Hygiene">
+  <meta property="og:description" content="Discover JK Phenyl's range of cleaning solutions, including phenyl cleaners, dishwashing liquids, and toilet brushes for a hygienic home. Shop now!">
+  <meta property="og:image" content="https://jkphenyl.github.io/img/j-k.png">
+  <meta property="og:url" content="https://jkphenyl.github.io/">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JK Phenyl - Premium Cleaning Products">
+  <meta name="twitter:description" content="Shop JK Phenyl's cleaning products for a spotless and hygienic home.">
+  <meta name="twitter:image" content="https://jkphenyl.github.io/img/j-k.png">
+  <title>JK Phenyl - Premium Cleaning Products for Home & Hygiene</title>
+  <link rel="icon" type="image/webp" href="./img/JK-Icon.webp">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #c2d2f5, #dcf3ff);
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 25px;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .logo img {
+      width: 150px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #4f6cfe;
+    }
+    .menu-icon {
+      display: none;
+      width: 30px;
+      cursor: pointer;
+    }
+    .small-container {
+      padding: 30px 20px;
+    }
+    .row-2 h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #004891;
+      font-size: 32px;
+    }
+    .intro-text {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #4a4a4a;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .col-4 {
+      background: #fff;
+      width: 220px;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .col-4 img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .col-4 h4 {
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+    .col-4:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      background: #ffffff;
+    }
+    .footer-col-2 {
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+      background: #4facfe;
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+    }
+    .footer-col-2 img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    .footer-col-2 p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    a.call-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      border-radius: 5px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-image: url('./img/phone-call.png');
+      background-size: cover;
+      background-position: center;
+    }
+    @media only screen and (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul {
+        flex-direction: column;
+        background: #4facfe;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 0 0 0 20px;
+        display: none;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="/"><img src="./img/j-k.png" alt="JK Phenyl Logo" /></a> 
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <img src="./img/menu-bar (1).png" alt="Menu Icon" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
+  <div class="small-container">
+    <div class="row row-2">
+      <h1>Premium Cleaning Products by JK Phenyl</h1>
+      <p class="intro-text">Discover JK Phenyl's range of high-quality cleaning solutions designed for a hygienic and spotless home. From phenyl cleaners to dishwashing liquids, we have everything you need to keep your home shining.</p>
+    </div>
+    <div class="row">
+      <div class="col-4"><a href="/products/phenyl"><img src="./img/1.jpg" alt="JK Phenyl Cleaner - White Phenyl" /><h4>Phenyl</h4></a></div>
+      <div class="col-4"><a href="/products/neem-phenyl"><img src="./img/2.jpg" alt="JK Neem Phenyl Cleaner" /><h4>Neem Phenyl</h4></a></div>
+      <div class="col-4"><a href="/products/black-phenyl"><img src="./img/black-phenyl.png" alt="JK Black Phenyl Cleaner" /><h4>Black Phenyl</h4></a></div>
+      <div class="col-4"><a href="/products/dettol-phenyl"><img src="./img/Dettol-phenyl.jpeg" alt="JK Dettol Phenyl Cleaner" /><h4>Dettol Phenyl</h4></a></div>
+      <div class="col-4"><a href="/products/walker-extra-strong"><img src="./img/walker-extra-strong-phenyle.png" alt="Walker Extra Strong Phenyl" /><h4>Walker Extra Strong Phenyle</h4></a></div>
+      <div class="col-4"><a href="/products/naphthalene-ball"><img src="./img/3.jpg" alt="JK Naphthalene Balls for Wardrobe" /><h4>Naphthalene Ball</h4></a></div>
+      <div class="col-4"><a href="/products/bleach"><img src="./img/4.jpg" alt="JK Bleach Cleaner for Surfaces" /><h4>Bleach</h4></a></div>
+      <div class="col-4"><a href="/products/harpic"><img src="./img/Harpic.png" alt="JK Harpic Toilet Cleaner" /><h4>Harpic</h4></a></div>
+      <div class="col-4"><a href="/products/appliance-descaler"><img src="./img/Appliance-Descaler.png" alt="JK Appliance Descaler for Machines" /><h4>Appliance Descaler</h4></a></div>
+      <div class="col-4"><a href="/products/toilet-cleaner-super-strong"><img src="./img/toilet-cleaner-super-strong-(Drain-Cleaner).png" alt="JK Toilet Cleaner Super Strong Drain Cleaner" /><h4>Toilet Cleaner Super Strong</h4></a></div>
+      <div class="col-4"><a href="/products/shining-powder"><img src="./img/Pavitram-Power-Shining-Cleaning-Powder.jpg" alt="JK Shining Cleaning Powder for Surfaces" /><h4>Shining Cleaning Powder</h4></a></div>
+      <div class="col-4"><a href="/products/cloth-clip"><img src="./img/Plastic-Cloth-Clip.jpg" alt="JK Plastic Cloth Clips for Laundry" /><h4>Plastic Cloth Clip</h4></a></div>
+      <div class="col-4"><a href="/products/steel-scrubber"><img src="./img/Stainless-Steel-Scrubber.png" alt="JK Stainless Steel Scrubber for Kitchen" /><h4>Steel Scrubber</h4></a></div>
+      <div class="col-4"><a href="/products/cloth-washing-brush"><img src="./img/cloth-washing-brush.png" alt="JK Cloth Washing Brush for Laundry" /><h4>Cloth Washing Brush</h4></a></div>
+      <div class="col-4"><a href="/products/toilet-cleaning-brush"><img src="./img/toilet-cleaning-brush.png" alt="JK Toilet Cleaning Brush" /><h4>Toilet Cleaning Brush</h4></a></div>
+      <div class="col-4"><a href="/products/laxman-rekha"><img src="./img/laxman-rekha-chalk.png" alt="JK Laxman Rekha Chalk for Pest Control" /><h4>Laxman Rekha Chalk</h4></a></div>
+      <div class="col-4"><a href="/products/air-freshener"><img src="./img/Air-freshener.png" alt="JK Air Freshener for Home" /><h4>Air Freshener</h4></a></div>
+      <div class="col-4"><a href="/products/room-freshener-spray"><img src="./img/room-freshener-spray.png" alt="JK Room Freshener Spray" /><h4>Room Freshener Spray</h4></a></div>
+      <div class="col-4"><a href="/products/dishwashing-liquid"><img src="./img/dishwashing-liquid.png" alt="JK Dishwashing Liquid for Kitchen" /><h4>Dishwashing Liquid</h4></a></div>
+      <div class="col-4"><a href="/products/cloth-washing-liquid"><img src="./img/cloth-washing-liquid.png" alt="JK Cloth Washing Liquid for Laundry" /><h4>Cloth Washing Liquid</h4></a></div>
+      <div class="col-4"><a href="/products/caustic-soda"><img src="./img/caustic-soda.png" alt="JK Caustic Soda Cleaner for Tough Stains" /><h4>Caustic Soda</h4></a></div>
+      <div class="col-4"><a href="/products/sulphuric-acid"><img src="./img/Sulphuric-acid.png" alt="JK Sulphuric Acid Cleaner" /><h4>Sulphuric Acid</h4></a></div>
+      <div class="col-4"><a href="/products/sodium-hypochlorite"><img src="./img/sodium-hypochlorite.png" alt="JK Sodium Hypochlorite Cleaner for Disinfection" /><h4>Sodium Hypochlorite</h4></a></div>
+      <div class="col-4"><a href="/products/hidroklorik-asit"><img src="./img/Hidroklorik-asit.jpg" alt="JK Hidroklorik Asit Cleaner" /><h4>Hidroklorik Asit</h4></a></div>
+      <div class="col-4"><a href="/products/liquid-detergent-soapkit"><img src="./img/Liquid-Dteteregent-Soapkit.png" alt="JK Liquid Detergent Soapkit for Cleaning" /><h4>Liquid Detergent Soapkit</h4></a></div>
+    </div>
+    <div class="footer-col-2">
+      <img src="./img/j-k.png" alt="JK Phenyl Logo" />
+      <p>Pure clean, Every Scene: Our Phenyl, Your Shine. | Purity in every Drop, JK Phenyl</p>
+    </div>
+    <a class="call-button" href="tel:+919898678083" aria-label="Call JK Phenyl for Support"></a>
+  </div>
+  <!-- Schema Markup for Products -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JK Phenyl",
+    "url": "https://jkphenyl.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jkphenyl.github.io/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "JK Phenyl Cleaner",
+        "image": "https://jkphenyl.github.io/img/1.jpg",
+        "description": "High-quality white phenyl cleaner for a spotless and hygienic home.",
+        "url": "https://jkphenyl.github.io/products/phenyl"
+      },
+      {
+        "@type": "Product",
+        "name": "JK Neem Phenyl Cleaner",
+        "image": "https://jkphenyl.github.io/img/2.jpg",
+        "description": "Eco-friendly neem phenyl cleaner for natural cleaning and hygiene.",
+        "url": "https://jkphenyl.github.io/products/neem-phenyl"
+      },
+      {
+        "@type": "Product",
+        "name": "JK Black Phenyl Cleaner",
+        "image": "https://jkphenyl.github.io/img/black-phenyl.png",
+        "description": "Powerful black phenyl cleaner for tough stains and hygiene.",
+        "url": "https://jkphenyl.github.io/products/black-phenyl"
+      }
+    ]
+  }
+  </script>
+  <!-- Toggle Menu JS -->
+  <script>
+    function menutoggle() {
+      var menu = document.getElementById('MenuItems');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
