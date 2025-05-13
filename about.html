@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"-->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+.container,
+.container .img-area,
+.social-icons a,
+.buttons button{
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+}
+.container{
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ 
+ 
+ 
+.container .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .name{
+  font-size: 23px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+}
+.container .about{
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container .social-icons{
+  margin: 15px 0 25px 0;
+}
+.social-icons a{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+}
+ 
+ 
+.social-icons a i{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+.social-icons a.fb i{
+  color: #0054ff;
+}
+.social-icons a.twitter i{
+  color: #25d366;
+}
+.social-icons a.insta i{
+  color: #E1306C;
+}
+.social-icons a.yt i{
+  color: #ff0000;
+}
+.container .buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.buttons button{
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+}
+.buttons button:first-child{
+  margin-right: 10px;
+}
+.buttons button:last-child{
+  margin-left: 10px;
+}
+.container .social-share{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+.social-share .row{
+  color: #31344b;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+}
+.social-share .row::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background: #e0e6eb;
+  margin-left: -25px;
+}
+.row:first-child::before{
+  background: none;
+}
+.social-share .row i.icon-2{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #31344b;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.row:nth-child(1):hover i.fa-heart,
+.row:nth-child(2):hover i.fa-comment{
+  opacity: 1;
+  pointer-events: auto;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+   <div class="container">
+      <div class="img-area">
+         <div class="inner-area">
+            <img src="../img/jk.png" alt="">
+         </div>
+      </div>
+      <div class="name">Jignesh Kachhiya</div>
+      <div class="about"><a href="tel:+919898678083">+91 98986 78083</div><br></a>
+      <div class="about">D.24, Shantinagar Society, Behind Ganesh Kharwa Society, Machipura Road, Khambhat-388620.</div>
+      <div class="social-icons">
+         <a href="tel:+91 98986 78083" class="fb"><i class="fa fa-phone"></i></a>
+         <a href="https://wa.me/+919898678083" class="twitter"><i class="fab fa-whatsapp"></i></a>
+         <a href="sms:+91 98986 78083" class="insta"><i class="fas fa-sms"></i></a>
+      </div>
+      <centes>
+      <div class="buttons">
+         <a href="../">
+         <button>Back</button></a>
+      </div>
+      </centes>
+      <!--div class="social-share">
+         <div class="row">
+            <i class="fa fa-heart"></i>
+            <span>30.4k </span>
+         </div>
+         <div class="row">
+            <i class="fa fa-comment"></i>
+            <span>54.2k</span>
+         </div>
+         <div class="row">
+            <i class="fa fa-share"></i>
+            <span>38.5k</span>
+         </div>
+      </div>
+   </div-->
+</body>
+<!-- partial -->
+  
+</body>
+</html>
